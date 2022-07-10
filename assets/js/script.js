@@ -7,36 +7,29 @@ setInterval(highlightCurrentHour, 10000); // call for the current hour every sec
 function highlightCurrentHour() {
   let currentHour = DateTime.local().hour; // set the current hour
   $("#current-day").html(dt.toLocaleString(DateTime.DATE_HUGE)); // show the current date
-  $("body").addClass(`now-${currentHour}`); // add the current hour as a class to the body element to use css selectors for color change
+  $("body").addClass(`now-${currentHour}`); // add the current hour as a class to the body element to use css selectors for color
    }
-highlightCurrentHour(); // invoke immediately so there is no visual delay 
 
-const submitTask = function(event) {
-  event.preventDefault();
-  let tasksArray = []
-  const taskID = $("task-entry").attr("id")
-  console.log(taskID);
-  const task = $(".task-entry").val();
-  console.log(task);
-  localStorage.setItem
-  JSON.parse(localStorage.getItem("IDs"))
-}
+//* Use .on as event listener for submit type
+$("form").on("submit", function (e) {
+  e.preventDefault();
 
-function saveEntry() {
-  // var appointment = $("textarea#appointment-entry").val();
-  console.log(this.id)
-  console.log(appointment)
-  var div2 = $(".row div:nth-child(2)")
-  div2.css("background-color", "red")
-}
+// Loop through textareas to place content in localStorage
+  $("textarea").each(function (indexInArray, element) { 
+   localStorage.setItem(element.id, element.value)
+});
+});
+
+// Use localStorage to show values on page
+$("document").ready(function (e) {
+  highlightCurrentHour(); // invoke immediately so there is no visual delay 
+  $("textarea").each(function (indexInArray, element) {
+    let value = localStorage.getItem(element.id);
+    element.value = value
+  });
+})
 
 
-// TODO localStorage
-// the preferred approach is
+// TODO Understand localStorage and jQuery .each and .ready
 // localStorage.setItem(key,value); to set
-// localStorage.getItem(key); to get.
-// key and value must be strings.
-
-//* Listen for click on save button
-//* Get the id
-//* For the sibling of that id, color the element red
+// localStorage.getItem(key); to get
