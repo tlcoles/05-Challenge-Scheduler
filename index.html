@@ -14,8 +14,8 @@
     <header class="bg-light p-5 rounded-lg m-3">
       <h1 class="display-4">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-      <p id="currentHour" class="lead"></p>
+      <p id="current-day" class="lead"></p>
+      <p id="current-hour" class="lead"></p>
       <hr class="my-4">
     </header>
       <p id="confirmation-message" class="hide-show"></p>
@@ -25,12 +25,12 @@
       <form class= "add-event" action="">
 
 <!-- Create content rows -->
-        <div class="row">
+      <div class="row">
         <div class="col text-end">
           08:00
         </div>
-        <div id="8" class="col-9 border border-success">
-          <textarea name="8AM" id="8AM" class="appointment-entry col-9"></textarea>
+        <div id="hr-8" class="nth2 col-9 border border-success">
+          <textarea name="8AM" id="8AM" class="task-entry col-9"></textarea>
         </div>
         <div class="col d-flex justify-content-start">
           <button class="btn" type="submit"><i id="btn8" class="fa-solid fa-floppy-disk fa-2xl"></i></button>
@@ -41,121 +41,123 @@
         <div class="col text-end">
           09:00
         </div>
-        <div id="9" class="col-9 border border-success">
-          <textarea name="9AM" id="9AM" class="appointment-entry col-9"></textarea>
+        <div id="hr-9" class="nth2 col-9 border border-success">
+          <textarea name="9AM" id="9AM" class="task-entry col-9"></textarea>
         </div>
         <div class="col d-flex justify-content-start">
           <button class="btn" type="submit"><i id="btn9" class="fa-solid fa-floppy-disk fa-2xl"></i></button>
         </div>
       </div>
 
-        <div class="row">
+      <div class="row">
           <div class="col text-end">
             10:00
           </div>
-          <div id="10" class="col-9 border border-success">
-            <textarea name="10AM" id="10AM" class="appointment-entry col-9"></textarea>
+          <div id="hr-10" class="nth2 col-9 border border-success">
+            <textarea name="10AM" id="10AM" class="task-entry col-9"></textarea>
             </div>
           <div class="col d-flex justify-content-start">
             <button class="btn" type="submit"><i id="btn10" class="fa-solid fa-floppy-disk fa-2xl"></i></button>
           </div>
-        </div>
+      </div>
 
-        <div class="row">
+      <div class="row">
           <div class="col text-end">
             11:00
           </div>
-          <div id="11" class="col-9 border border-success">
-            <textarea name="11AM" id="11AM" class="appointment-entry col-9"></textarea>
+          <div id="hr-11" class="nth2 col-9 border border-success">
+            <textarea name="11AM" id="11AM" class="task-entry col-9"></textarea>
           </div>
           <div class="col d-flex justify-content-start">
             <button class="btn" type="submit"><i id="btn11" class="fa-solid fa-floppy-disk fa-2xl"></i></button>
           </div>
-        </div>
+      </div>
 
-        <div class="row">
+      <div class="row">
           <div class="col text-end">
             12:00
           </div>
-          <div id="12" class="col-9 border border-success">
-            <textarea name="12PM" id="12PM" class="appointment-entry col-9"></textarea>
+          <div id="hr-12" class="nth2 col-9 border border-success">
+            <textarea name="12PM" id="12PM" class="task-entry col-9"></textarea>
           </div>
           <div class="col d-flex justify-content-start">
             <button class="btn" type="submit"><i id="btn12" class="fa-solid fa-floppy-disk fa-2xl"></i></button>
           </div>
-        </div>
+      </div>
 
-        <div class="row">
+      <div class="row">
           <div class="col text-end">
             13:00
           </div>
-          <div id="13" class="col-9 border border-success">
-            <textarea name="1PM" id="1PM" class="appointment-entry col-9"></textarea>
+          <div id="hr-13" class="nth2 col-9 border border-success">
+            <textarea name="1PM" id="1PM" class="task-entry col-9"></textarea>
           </div>
           <div class="col d-flex justify-content-start">
             <button class="btn" type="submit"><i id="btn13" class="fa-solid fa-floppy-disk fa-2xl"></i></button>
           </div>
-        </div>
+      </div>
 
-        <div class="row">
+      <div class="row">
           <div class="col text-end">
             14:00
           </div>
-          <div id="14" class="col-9 border border-success">
-            <textarea name="2PM" id="2PM" class="appointment-entry col-9"></textarea>
+          <div id="hr-14" class="nth2 col-9 border border-success">
+            <textarea name="2PM" id="2PM" class="task-entry col-9"></textarea>
           </div>
           <div class="col d-flex justify-content-start">
             <button class="btn" type="submit"><i id="btn14" class="fa-solid fa-floppy-disk fa-2xl"></i></button>
           </div>
-        </div>
+      </div>
 
-        <div class="row">
+      <div class="row">
           <div class="col text-end">
             15:00
           </div>
-          <div id="15" class="col-9 border border-success">
-            <textarea name="3PM" id="3PM" class="appointment-entry col-9"></textarea>
+          <div id="hr-15" class="nth2 col-9 border border-success">
+            <textarea name="3PM" id="3PM" class="task-entry col-9"></textarea>
           </div>
           <div class="col d-flex justify-content-start">
             <button class="btn" type="submit"><i id="btn15" class="fa-solid fa-floppy-disk fa-2xl"></i></button>
           </div>
-        </div>
+      </div>
 
-        <div class="row">
+      <div class="row">
           <div class="col text-end">
             16:00
           </div>
-          <div id="16" class="col-9 border border-success">
-            <textarea name="4PM" id="4PM" class="appointment-entry col-9"></textarea>
+          <div id="hr-16" class="nth2 col-9 border border-success">
+            <textarea name="4PM" id="4PM" class="task-entry col-9"></textarea>
           </div>
           <div class="col d-flex justify-content-start">
             <button class="btn" type="submit"><i id="btn16" class="fa-solid fa-floppy-disk fa-2xl"></i></button>
           </div>
-        </div>
+      </div>
 
-        <div class="row">
+      <div class="row">
           <div class="col text-end">
             17:00
           </div>
-          <div id="17" class="col-9 border border-success">
-            <textarea name="5PM" id="5PM" class="appointment-entry col-9"></textarea>
+          <div id="hr-17" class="nth2 col-9 border border-success">
+            <textarea name="5PM" id="5PM" class="task-entry col-9"></textarea>
           </div>
           <div class="col d-flex justify-content-start">
             <button class="btn" type="submit"><i id="btn17" class="fa-solid fa-floppy-disk fa-2xl"></i></button>
           </div>
-        </div>
+      </div>
 
-        <div class="row">
-          <div class="col text-end">
-            18:00
-          </div>
-          <div id="18" class="col-9 border border-success">
-            <textarea name="6PM" id="6PM" class="appointment-entry col-9"></textarea>
-            <label for="6PM"></label>
-          </div>
-          <div class="col d-flex justify-content-start">
-            <button class="btn" type="submit"><i id="btn18" class="fa-solid fa-floppy-disk fa-2xl"></i></button>
-          </div>
+      <div class="row">
+        <div class="col text-end">
+          18:00
+        </div>
+        <div id="hr-18" class="nth2 col-9 border border-success">
+          <textarea name="6PM" id="6PM" class="task-entry col-9"></textarea>
+        </div>
+        <div class="col d-flex justify-content-start">
+          <button class="btn" type="submit"><i id="btn18" class="fa-solid fa-floppy-disk fa-2xl"></i></button>
+        </div>
+    </div>
+
+<!-- Close content rows, then form, then container div-->   
       </form>
     </div>
 <footer>

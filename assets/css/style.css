@@ -27,17 +27,18 @@ body {
     all:unset;
   }
 
-  .row div:nth-child(2) {
+/* Target center div for coloring   .row div:nth-child(2)*/
+ .nth2 {
     background-color: var(--gray);
   }
-  
+
   textarea{
     background: transparent;
     border: none;
     resize: none;
     color: var(--black);
-    border-left: 1px solid var(--black);
-    padding: 10px;
+    /* border-left: 1px solid var(--black); */
+    padding: 5px;
   }
     
   .description{
@@ -52,7 +53,7 @@ body {
   .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
+    margin-top: 10px;
   }
   
   .hour {
@@ -60,37 +61,98 @@ body {
     color: var(--black);
     border-top: 1px dashed var(--black);
   }
-  
+
+  .now-8 #hr-8, 
+  .now-9 #hr-9, 
+  .now-10 #hr-10, 
+  .now-11 #hr-11,
+  .now-12 #hr-12,    
+  .now-13 #hr-13,
+  .now-14 #hr-14, 
+  .now-15 #hr-15, 
+  .now-16 #hr-16, 
+  .now-17 #hr-17, 
+  .now-18 #hr-18 {
+    background-color: var(--green);
+    color: white;
+  }
+
+  .now-8 #hr-9,
+  .now-8 #hr-10,
+  .now-8 #hr-11,
+  .now-8 #hr-12,
+  .now-8 #hr-13,
+  .now-8 #hr-14,
+  .now-8 #hr-15,
+  .now-8 #hr-16,  
+  .now-8 #hr-17,
+  .now-8 #hr-18,  
+  .now-9 #hr-10,
+  .now-9 #hr-11,
+  .now-9 #hr-12,
+  .now-9 #hr-13,
+  .now-9 #hr-14,
+  .now-9 #hr-15,
+  .now-9 #hr-16,  
+  .now-9 #hr-17,
+  .now-9 #hr-18,  
+  .now-10 #hr-11,
+  .now-10 #hr-12,
+  .now-10 #hr-13,
+  .now-10 #hr-14,
+  .now-10 #hr-15,
+  .now-10 #hr-16,  
+  .now-10 #hr-17,
+  .now-10 #hr-18,
+  .now-11 #hr-12,
+  .now-11 #hr-13,
+  .now-11 #hr-14,
+  .now-11 #hr-15,
+  .now-11 #hr-16,  
+  .now-11 #hr-17,
+  .now-11 #hr-18,
+  .now-12 #hr-13,
+  .now-12 #hr-14,
+  .now-12 #hr-15,
+  .now-12 #hr-16,  
+  .now-12 #hr-17,
+  .now-12 #hr-18,
+  .now-13 #hr-14,
+  .now-13 #hr-15,
+  .now-13 #hr-16,  
+  .now-13 #hr-17,
+  .now-13 #hr-18,
+  .now-14 #hr-15,
+  .now-14 #hr-16,  
+  .now-14 #hr-17,
+  .now-14 #hr-18,
+  .now-15 #hr-16,  
+  .now-15 #hr-17,
+  .now-15 #hr-18,
+  .now-16 #hr-17,
+  .now-16 #hr-18,
+  .now-17 #hr-18
+  {
+    background-color: var(--orange);
+    color: white;
+  }
+
+
   .past {
     background-color: var(--gray);
     color: white;
   }
   
   .present {
-    background-color: var(--orange);
-    color: white;
-  }
-  
-  .future {
     background-color: var(--green);
     color: white;
   }
   
-  .saveBtn {
-/*     border-left: 1px solid var(--black);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: var(--blue);
-    color: white; */
-    border: none !important;
-    padding: 0  !important;
-    text-align: left  !important;
-    width: 100%  !important;
+  .future {
+    background-color: var(--orange);
+    color: white;
   }
   
-  .saveBtn i:hover {
-    transition: all .3s ease-in-out;
-  }  
 
   footer {
     clear: both;
