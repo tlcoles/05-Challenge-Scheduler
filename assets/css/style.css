@@ -1,8 +1,8 @@
+/* Set color, Google font style, and font-size */
+
 :root {
     --black: #000000;
-    --white: #ffffff;
     --gray: #d3d3d3;
-    --orange: #ff6961;
     --green: #e6ffe6;
     --blue: #06AED5;
 }
@@ -13,6 +13,7 @@ body {
     line-height: 1;
   }
 
+/* Remove Bootstrap styles to use FontAwesome icon and animate it */
 .btn, button, input[type="submit"], input[type="reset"] {
     background: none;
     color: inherit;
@@ -23,44 +24,24 @@ body {
     outline: inherit;
   }
 
-  .add-event {
-    all:unset;
+  i {
+    --fa-animation-duration: 2s;
   }
 
-/* Target center div for coloring   .row div:nth-child(2)*/
- .nth2 {
-    background-color: var(--gray);
-  }
-
-  textarea{
-    background: transparent;
-    border: none;
-    resize: none;
-    color: var(--black);
-    /* border-left: 1px solid var(--black); */
-    padding: 5px;
-  }
-    
-  .description{
-    white-space: pre-wrap;
-  }
-  
-  .time-block{
-    text-align: center;
-    border-radius: 15px;
-  }
-  
+/* Overide some Bootstrap 5 styling */
   .row {
     white-space: pre-wrap;
     height: 80px;
     margin-top: 10px;
+
   }
   
-  .hour {
-    background-color: #ffffff;
-    color: var(--black);
-    border-top: 1px dashed var(--black);
-  }
+/* Target center div for default color .row div:nth-child(2)*/
+.nth2 {
+  background-color: var(--gray);
+}
+
+/* Change the nth div background using highlightCurrentHour js function */
 
   .now-8 #hr-8, 
   .now-9 #hr-9, 
@@ -74,7 +55,6 @@ body {
   .now-17 #hr-17, 
   .now-18 #hr-18 {
     background-color: var(--green);
-    color: white;
   }
 
   .now-8 #hr-9,
@@ -133,29 +113,23 @@ body {
   .now-16 #hr-18,
   .now-17 #hr-18
   {
-    background-color: var(--orange);
-    color: white;
+    background-color: var(--blue);
   }
 
+/* Style the textarea for div color, increase font size and weight */
+  textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+  }
 
-  .past {
-    background-color: var(--gray);
-    color: white;
-  }
-  
-  .present {
-    background-color: var(--green);
-    color: white;
-  }
-  
-  .future {
-    background-color: var(--orange);
-    color: white;
-  }
-  
+/* Center the footer information */
 
   footer {
-    clear: both;
     margin-top: 100px;
     text-align: center;
   }
