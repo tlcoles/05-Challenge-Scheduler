@@ -14,7 +14,7 @@ An assignment of the ESMT Coding Boot Camp. Apply your skills to create a simple
 
 ## Gratitude
 * Andrew Evans of Rhythm and Binary for [Using Luxon for JavaScript Dates and Times](https://youtu.be/zIRSdTKyPS4)
-* Morgan Roderick for general support and redirection from JavaaScript to CSS for time highlighting
+* Morgan Roderick for general support and redirection from JavaScript to CSS for time highlighting
 * ESMT Coding Boot Camp teachers and tutors for instruction, resource suggestions, and support
 * Study buddies Henriette and Tornike for burning the midnight oil with me
 ## Contact
